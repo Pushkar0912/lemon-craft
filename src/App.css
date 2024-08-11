@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes nav-start {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .animate-nav-start {
+    animation: nav-start 1s  forwards ;
+    opacity: 0; /* Ensure the element is hidden initially */
+  }
+  
+
+@keyframes slide-up {
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.4s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes slide-in-from-right {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-in-from-right {
+    animation: slide-in-from-right 0.7s ease-out forwards;
+  }
+
+
+ @keyframes scale-up {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(0.7);
+        opacity: 0.3;
+      }
+      100% {
+        transform: scale(0.9);
+        opacity: 1;
+      }
+  }
+  @keyframes shrink-hide {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.3);
+      opacity: 0;
+    }
+  }
+  
+  .animate-shrink-hide {
+    animation: shrink-hide 0.7s ease-out forwards;
+  }
+  
+  .animate-scale-up {
+    animation: scale-up 0.7s ease-out forwards;
+    transform-origin: center;
+    opacity: 0;
+  }  
+@keyframes slide-up-hidden {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.animate-slide-up-hidden {
+  animation: slide-up-hidden 0.4s ease-out forwards;
+}
+  
+  .delay-100 {
+    animation-delay: 0.5s;
+  }
+  
+  .delay-200 {
+    animation-delay: 0.8s;
+  }
+  
+  .delay-300 {
+    animation-delay: 1s;
+  }
+  
+  .delay-400 {
+    animation-delay: 1.2s;
+  }
+  
+  .delay-500 {
+    animation-delay: 1.4;
+  }
+  
